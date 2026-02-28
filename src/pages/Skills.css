@@ -1,0 +1,192 @@
+/* Main content layout */
+.content {
+    margin-left: 240px;
+    margin-top: 80px;
+    padding: 20px;
+    background: #f9fafb;
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Card container */
+.skills-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 950px;
+    margin: auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.skills-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.skill-input {
+    padding: 10px 14px;
+    width: 340px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.save-btn {
+    padding: 10px 18px;
+    font-size: 15px;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background: #1e40af;
+}
+
+/* Skill card grid */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 18px;
+}
+
+/* Skill Card */
+.skill-card {
+    background: #f9fafb;
+    padding: 15px 18px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    transition: 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.skill-name {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* Verified message */
+.verified-text {
+    display: inline-block;
+    background: #d1fae5;
+    color: #065f46;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Pending message */
+.pending-text {
+    display: inline-block;
+    background: #fef9c3;
+    color: #92400e;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Action buttons */
+.verify-btn {
+    background: #111827;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 12px;
+    margin-right: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.verify-btn:hover {
+    background: #1f2937;
+}
+
+.remove-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.remove-btn:hover {
+    background: #b91c1c;
+}
+
+/* Empty Message */
+.empty-msg {
+    text-align: center;
+    margin-top: 25px;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* Popup message */
+.popup-success {
+    background: #22c55e;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    animation: fadeDown 0.3s ease;
+}
+
+.instructions-box {
+    background: #f1f5f9;
+    border-left: 4px solid #2563eb;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #334155;
+}
+
+.instructions-box p {
+    margin: 6px 0;
+    line-height: 1.4;
+}
+
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}

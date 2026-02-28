@@ -1,0 +1,106 @@
+/* Page title */
+.home-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* container inside content */
+.jobs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+/* job card */
+.job-card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+}
+
+/* company logo */
+.company-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* job info section */
+.job-info {
+    flex: 1;
+}
+
+/* role */
+.job-role {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* JD */
+.job-jd {
+    margin-top: 6px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* skills row */
+.skills-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+/* skill tag */
+.skill-tag {
+    background: #e5e5e5;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #333;
+}
+
+/* verified skill tag (highlighted) */
+.skill-tag.verified {
+    background: #22c55e;
+    color: white;
+}
+
+/* Apply button */
+.apply-btn {
+    margin-top: 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+.apply-btn:hover {
+    background: #1d4ed8;
+}
+
+.content {
+    margin-left: 240px;
+    margin-top: 80px;
+    padding: 30px 20px;
+    max-height: calc(100vh - 80px);
+    height: auto;
+    overflow-y: auto;
+    background: #f9fafb;
+    box-sizing: border-box;
+    padding-bottom: 100px;
+    /* Important */
+}
